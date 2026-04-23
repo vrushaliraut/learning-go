@@ -4,4 +4,10 @@ import "fmt"
 
 func main() {
 	fmt.Println("Chapter 04: Block Shadow Control structure")
+
+	// slice_generate()
+
+	//precedence()
+
+	shadowingbug()
 }
