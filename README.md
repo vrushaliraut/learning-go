@@ -40,6 +40,24 @@ go run .
 
 Chapter 05 has been restructured to be **modular**. Each Go file is independently runnable and demonstrates a specific function concept:
 
+**⚠️ IMPORTANT:** You cannot run the entire `ch05_functions` directory anymore because each file has its own `main()` function. Run individual files instead.
+
+**✅ Correct Usage:**
+```bash
+# Run individual concepts
+go run ./ch05_functions/calculator.go
+go run ./ch05_functions/anonymous_function.go
+go run ./ch05_functions/closures.go
+go run ./ch05_functions/function_concept.go
+# ... etc
+```
+
+**❌ This will NOT work:**
+```bash
+go run ./ch05_functions  # Error: multiple main functions
+```
+
+**Available runnable files:**
 - `calculator.go` - Calculator with error handling
 - `anonymous_function.go` - Anonymous functions
 - `closures.go` - Closures and variable capture
