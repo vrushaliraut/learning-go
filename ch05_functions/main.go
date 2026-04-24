@@ -85,8 +85,12 @@ func main() {
 
 	//fmt.Println(shadowing_risk())
 
-	simulate_do_while()
+	// simulate_do_while()
+	// function_are_values()
+	// function_map()
+	// anonymous()
 
+	package_level_anonymous_function()
 }
 
 /*
