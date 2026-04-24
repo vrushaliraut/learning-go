@@ -89,8 +89,8 @@ func main() {
 	// function_are_values()
 	// function_map()
 	// anonymous()
-
-	package_level_anonymous_function()
+	// package_level_anonymous_function()
+	closures()
 }
 
 /*
