@@ -8,8 +8,6 @@ import (
 func main() {
 	fmt.Println("Chapter 01: Setup Go")
 
-	networklimitation()
-
 	typesDeclaration()
 
 	booleanDeclaration()

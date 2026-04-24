@@ -44,4 +44,3 @@ func main() {
 	fmt.Println("- Only basic types: numbers, strings, booleans")
 	// const bad = intVar  // This would fail - cannot use variable as constant value
 }
-

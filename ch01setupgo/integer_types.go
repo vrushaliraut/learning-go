@@ -22,12 +22,12 @@ func main() {
 	fmt.Println("\n=== Integer Operations ===")
 	x := 10
 	y := 3
-	fmt.Println("10 + 3 =", x+y)   // 13
-	fmt.Println("10 * 3 =", x*y)   // 30
-	fmt.Println("10 / 3 =", x/y)   // 3
-	fmt.Println("10 % 3 =", x%y)   // 1
+	fmt.Println("10 + 3 =", x+y) // 13
+	fmt.Println("10 * 3 =", x*y) // 30
+	fmt.Println("10 / 3 =", x/y) // 3
+	fmt.Println("10 % 3 =", x%y) // 1
 
-	fmt.Println("\n=== Division Behavior ===")
+	fmt.Println("\n=== Division Behaviour ===")
 	a := 10
 	b := 3
 	fmt.Println("10 / 3 =", a/b) // Prints 3
@@ -47,4 +47,3 @@ func main() {
 	var b1 byte = 255
 	fmt.Printf("byte (uint8 alias) value: %d, Type: %T\n", b1, b1)
 }
-
