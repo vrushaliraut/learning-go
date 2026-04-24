@@ -29,3 +29,7 @@ func shadowing() {
 	f()
 	fmt.Println("prints outer x still (20) : ", x) // prints outer x still 20
 }
+
+func main() {
+	closures()
+}

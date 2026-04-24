@@ -27,3 +27,7 @@ func changeAdditionFunction() {
 		return i + j + j
 	}
 }
+
+func main() {
+	package_level_anonymous_function()
+}

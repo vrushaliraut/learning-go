@@ -7,7 +7,7 @@ type Person struct {
 	age  int
 }
 
-func main() {
+func pointer_behaviour() {
 	vrushali := Person{"vrushali", 20}
 	fmt.Println(vrushali)
 	processPerson(vrushali)

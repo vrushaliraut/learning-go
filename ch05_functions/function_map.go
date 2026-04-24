@@ -33,3 +33,7 @@ func function_map() {
 		fmt.Println("Function not found in map")
 	}
 }
+
+func main() {
+	function_map()
+}

@@ -59,3 +59,7 @@ func addition(a, b int) {
 func getNums() (int, int) {
 	return 10, 20
 }
+
+func main() {
+	variadicFunctionConcept()
+}

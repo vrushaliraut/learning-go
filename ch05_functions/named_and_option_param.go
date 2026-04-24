@@ -53,3 +53,19 @@ if opts.Age == nil{
 	use(*opts.Age)
 }
 */
+
+func main() {
+	// Call using named Fields. Unset fields get zero values
+
+	// Omit FirstName -> becomes " "
+	MyFunc(MyFuncOpts{
+		LastName: "Raut",
+		Age:      20,
+	})
+
+	// Omit Age -> becomes 0
+	MyFunc(MyFuncOpts{
+		FirstName: "Joe",
+		LastName:  "Smith",
+	})
+}

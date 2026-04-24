@@ -22,3 +22,7 @@ func anonymous() {
 		}(j)
 	}
 }
+
+func main() {
+	anonymous()
+}

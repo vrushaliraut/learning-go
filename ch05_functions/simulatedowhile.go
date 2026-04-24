@@ -64,3 +64,7 @@ func simulate_do_while() {
 		}
 	}
 }
+
+func main() {
+	simulate_do_while()
+}

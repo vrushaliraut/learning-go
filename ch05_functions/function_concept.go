@@ -34,3 +34,22 @@ func log(message string) { // No return type specified
 
 // The Blank Identifier (_)
 // In go you can implicitly ignore all values too --
+
+func main() {
+	fmt.Println("Function Concepts Demo")
+
+	// Test division function
+	result := division(10, 5)
+	fmt.Println("10 / 5 =", result)
+
+	// Test add1 function
+	sum := add1(3, 4)
+	fmt.Println("3 + 4 =", sum)
+
+	// Test log function
+	log("This is a test message")
+
+	// Test register functions (they don't return meaningful values)
+	register("John", "Doe", 30, "New York", "NY")
+	register2("Jane", "Smith", 25, "Los Angeles", "CA")
+}

@@ -27,3 +27,7 @@ func function_are_values() {
 	myFuncVariable = f2
 	fmt.Println(myFuncVariable("hello"))
 }
+
+func main() {
+	function_are_values()
+}

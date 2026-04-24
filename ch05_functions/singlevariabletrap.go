@@ -24,8 +24,10 @@ func getUser() (string, int) {
 	return "vrushali", 30
 }
 
-
-
 func getUserWithStruct() UserData {
 	return UserData{Name: "vrushali", Age: 30}
+}
+
+func main() {
+	singlevariabletrap()
 }
