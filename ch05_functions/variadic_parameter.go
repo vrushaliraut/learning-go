@@ -34,7 +34,7 @@ func variadicFunctionConcept() {
 	printAll()
 
 	// Function chaining example
-	add(getNums())
+	addition(getNums())
 }
 
 func printAll(vals ...interface{}) {
@@ -52,8 +52,7 @@ func sum(nums ...int) int {
 }
 
 // Function chaining
-
-func add(a, b int) {
+func addition(a, b int) {
 	fmt.Println(a + b)
 }
 

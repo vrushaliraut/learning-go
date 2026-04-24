@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func div(num int, denom int) int {
+func division(num int, denom int) int {
 	if denom == 0 {
 		return 0
 	}
