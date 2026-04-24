@@ -4,60 +4,30 @@ A learning project to understand Go programming language fundamentals.
 
 ## Structure
 
-- **ch01setupgo** - Chapter 01: Setup Go basics
-- **ch02_types_declaration** - Chapter 02: Types and Variable Declaration
-- **ch03_composite_types** - Chapter 03: Composite Types (Slices, Maps)
-- **ch05_functions** - Chapter 05: Functions (Modular - each concept is independently runnable)
+All chapters are now **modular** - each concept is in its own runnable file!
 
-## Running the Code
+### Chapter 01: Setup Go Basics
+- `types_declaration.go` - String and type basics
+- `boolean_declaration.go` - Boolean values
+- `integer_types.go` - Integer operations and types
+- `floating_point.go` - Float types and precision
+- `strings_and_runes.go` - Strings, runes, and conversions
+- `constants.go` - Constants declaration
+- `variable_declarations.go` - Variable declaration patterns
+- `zero_values.go` - Zero value concepts
+- `type_conversion.go` - Type conversion and casting
+- `networklimitation.go` - Network requests
 
-To run any chapter:
+### Chapter 02: Types and Variable Declaration
+- `explicit_types.go` - Explicit type declarations
+- `type_inference.go` - Type inference
+- `multiple_declarations.go` - Multiple variable declarations
+- `constants_declaration.go` - Constants
 
-```bash
-# Run Chapter 01
-go run ./ch01setupgo
+### Chapter 03: Composite Types
+- `main.go` - Slices and maps examples
 
-# Run Chapter 02
-go run ./ch02_types_declaration
-
-# Run Chapter 03
-go run ./ch03_composite_types
-
-# Run Chapter 05 (modular structure)
-go run ./ch05_functions/calculator.go
-go run ./ch05_functions/anonymous_function.go
-go run ./ch05_functions/closures.go
-# ... and so on for each concept
-```
-
-Or navigate to a chapter directory and run:
-
-```bash
-go run .
-```
-
-### Chapter 05: Functions - Modular Structure
-
-Chapter 05 has been restructured to be **modular**. Each Go file is independently runnable and demonstrates a specific function concept:
-
-**⚠️ IMPORTANT:** You cannot run the entire `ch05_functions` directory anymore because each file has its own `main()` function. Run individual files instead.
-
-**✅ Correct Usage:**
-```bash
-# Run individual concepts
-go run ./ch05_functions/calculator.go
-go run ./ch05_functions/anonymous_function.go
-go run ./ch05_functions/closures.go
-go run ./ch05_functions/function_concept.go
-# ... etc
-```
-
-**❌ This will NOT work:**
-```bash
-go run ./ch05_functions  # Error: multiple main functions
-```
-
-**Available runnable files:**
+### Chapter 05: Functions
 - `calculator.go` - Calculator with error handling
 - `anonymous_function.go` - Anonymous functions
 - `closures.go` - Closures and variable capture
@@ -72,7 +42,50 @@ go run ./ch05_functions  # Error: multiple main functions
 - `singlevariabletrap.go` - Single variable assignment trap
 - `variadic_parameter.go` - Variadic parameters
 
-Each file can be run independently: `go run ./ch05_functions/filename.go`
+## Running the Code
+
+**✅ Run individual concepts:**
+
+```bash
+# Chapter 01 examples
+go run ./ch01setupgo/types_declaration.go
+go run ./ch01setupgo/boolean_declaration.go
+go run ./ch01setupgo/integer_types.go
+go run ./ch01setupgo/floating_point.go
+go run ./ch01setupgo/strings_and_runes.go
+go run ./ch01setupgo/constants.go
+go run ./ch01setupgo/variable_declarations.go
+go run ./ch01setupgo/zero_values.go
+go run ./ch01setupgo/type_conversion.go
+go run ./ch01setupgo/networklimitation.go
+
+# Chapter 02 examples
+go run ./ch02_types_declaration/explicit_types.go
+go run ./ch02_types_declaration/type_inference.go
+go run ./ch02_types_declaration/multiple_declarations.go
+go run ./ch02_types_declaration/constants_declaration.go
+
+# Chapter 05 examples (same pattern)
+go run ./ch05_functions/calculator.go
+go run ./ch05_functions/closures.go
+# ... etc
+```
+
+**Navigate to a chapter and run a specific file:**
+
+```bash
+cd ch01setupgo
+go run types_declaration.go
+go run boolean_declaration.go
+# ... etc
+```
+
+## Important Notes
+
+⚠️ **All chapters are modular** - Each Go file has its own `main()` function. You must run individual files, not entire directories.
+
+✅ **Correct:** `go run ./ch01setupgo/types_declaration.go`  
+❌ **Incorrect:** `go run ./ch01setupgo` (will error with multiple main functions)
 
 ## License
 
