@@ -14,8 +14,8 @@ var myFuncVariable func(string) int
 
 func f1(a string) int { return len(a) }
 func f2(a string) int { return 42 } // dummy logic
-
-func function_are_values() {
+// function_are_values
+func main() {
 	var myFuncVariable func(string) int
 
 	// Assign f1
@@ -26,8 +26,4 @@ func function_are_values() {
 	// reassign
 	myFuncVariable = f2
 	fmt.Println(myFuncVariable("hello"))
-}
-
-func main() {
-	function_are_values()
 }

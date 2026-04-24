@@ -4,7 +4,7 @@ import "fmt"
 
 // anonymous function
 // Define the anonymous function and assign it to f
-func anonymous() {
+func main() {
 	f := func(j int) {
 		fmt.Println("printing", j, "from inside of an anonymous function")
 	}
@@ -21,8 +21,4 @@ func anonymous() {
 			fmt.Println("printing", j, "from inside of an anonymous function")
 		}(j)
 	}
-}
-
-func main() {
-	anonymous()
 }

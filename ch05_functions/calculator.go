@@ -7,9 +7,8 @@ import (
 )
 
 /*
-The Question: The simple calculator program (from the "Functions Are Values" section) doesn’t handle one error case:
-d
-ivision by zero.
+The Question: The simple calculator program (from the "Functions Are Values" section)
+doesn’t handle one error case:division by zero.
 
 Change the function signature for the math operations to return both an int and an error.
 In the div function, if the divisor is 0, return errors.New("division by zero") for the error.
@@ -41,7 +40,7 @@ var opMap = map[string]opFunctionType{
 	"/": div,
 }
 
-func calculator() {
+func main() {
 	expressions := [][]string{
 		{"2", "+", "3"},
 		{"2", "/", "3"}, // This will trigger the error
@@ -83,8 +82,4 @@ func calculator() {
 		fmt.Println(result)
 	}
 
-}
-
-func main() {
-	calculator()
 }

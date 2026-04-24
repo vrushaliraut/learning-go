@@ -11,7 +11,8 @@ var (
 
 // Unlike standard function declarations (which are constant),
 // a package-level variable holding a function can be modified at runtime.
-func package_level_anonymous_function() {
+// package_level_anonymous_function
+func main() {
 	x := addition2(3, 6)
 	fmt.Println(x) // print 9
 
@@ -26,8 +27,4 @@ func changeAdditionFunction() {
 	addition2 = func(i, j int) int {
 		return i + j + j
 	}
-}
-
-func main() {
-	package_level_anonymous_function()
 }

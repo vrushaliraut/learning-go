@@ -8,8 +8,9 @@ func sub(i, j int) int       { return i - j }
 func mul(i, j int) int       { return i * j }
 func divide(i, j int) int    { return i / j }
 
+// function_map
 // Create a map of function
-func function_map() {
+func main() {
 	var opMap = map[string]func(int, int) int{
 		"+": addition1,
 		"-": sub,
@@ -18,7 +19,6 @@ func function_map() {
 	}
 
 	// Execute via loop
-
 	op := "+" // assume come from user input
 	p1, p2 := 2, 3
 
@@ -32,8 +32,4 @@ func function_map() {
 	} else {
 		fmt.Println("Function not found in map")
 	}
-}
-
-func main() {
-	function_map()
 }

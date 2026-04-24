@@ -14,7 +14,7 @@ func addTo(base int, vals ...int) []int {
 	return out
 }
 
-func variadicFunctionConcept() {
+func main() {
 
 	// If you have slice you cannot pass it directly because the function expects int values, not []int.
 	// You must "unPack" or spread the slice using three dots (...) after the slice variable
@@ -58,8 +58,4 @@ func addition(a, b int) {
 
 func getNums() (int, int) {
 	return 10, 20
-}
-
-func main() {
-	variadicFunctionConcept()
 }

@@ -13,7 +13,8 @@ func division_example(a, b float64) float64 {
 	return a / b
 }
 
-func simulate_do_while() {
+// simulate_do_while
+func main() {
 	// variable to hold our inputs
 	var num1, num2 float64
 	var operator string
@@ -63,8 +64,4 @@ func simulate_do_while() {
 			fmt.Println("Goodbye!")
 		}
 	}
-}
-
-func main() {
-	simulate_do_while()
 }

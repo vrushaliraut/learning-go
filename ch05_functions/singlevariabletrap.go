@@ -9,7 +9,7 @@ type UserData struct {
 
 // change function to return the struct OR assign to immediate variables
 
-func singlevariabletrap() {
+func main() {
 
 	name, age := getUser()
 	userData := UserData{Name: name, Age: age}
@@ -26,8 +26,4 @@ func getUser() (string, int) {
 
 func getUserWithStruct() UserData {
 	return UserData{Name: "vrushali", Age: 30}
-}
-
-func main() {
-	singlevariabletrap()
 }
