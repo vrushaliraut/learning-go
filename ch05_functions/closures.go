@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func closures() {
+func main() {
 	a := 20
 	// This anonymous function is a closure
 	f := func() {
@@ -15,6 +15,35 @@ func closures() {
 
 	// shadowing in closure
 	shadowing()
+	shadowingCheck()
+
+	// the counter closure
+	counter := createCounter()
+	fmt.Println(counter()) // 1
+	fmt.Println(counter()) // 2
+
+}
+
+var x = 10
+
+func shadowingCheck() {
+	func() {
+		x = 20
+		x := 5
+		x = 50
+
+		fmt.Println("inner x: ", x)
+	}()
+	fmt.Println("outer x: ", x)
+}
+
+func createCounter() func() int {
+	count := 0 // 'count' is captured by the closure
+
+	return func() int {
+		count++
+		return count
+	}
 }
 
 func shadowing() {
@@ -28,8 +57,4 @@ func shadowing() {
 	}
 	f()
 	fmt.Println("prints outer x still (20) : ", x) // prints outer x still 20
-}
-
-func main() {
-	closures()
 }

@@ -37,16 +37,14 @@ func main() {
 	}
 	fmt.Println(result, remainder) // Prints 2 1
 
-	// MisMatched Assignment
-	// If a function returns 3 values, can you assign them to 2 variables
+	// MisMatched Assignment If a function returns 3 values, can you assign them to 2 variables
 	// Go requires strict assignment counts
 
 	// partial ignore
 	f, _ := os.Open("file.txt")
 	defer f.Close()
 
-	// Implicitly ignored all values
-	// Shadowing Risk
+	// Implicitly ignored all values Shadowing Risk
 	example()
 
 	remainder_with_variable(5, 2)

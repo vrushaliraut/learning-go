@@ -71,7 +71,7 @@ func clearBuiltInFunction() {
 	// nil vs empty slice literal
 	// var x = []int{}
 	// This creates a slice that is not nil but still has a length and capacity of 0.
-	
+
 }
 
 func makeAndAppendPattern() {

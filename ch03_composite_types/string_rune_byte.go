@@ -77,6 +77,4 @@ func typeConversionsStringRunesBytes() {
 	var byteString []byte = []byte(str)
 	var runeString []rune = []rune(str)
 
-	fmt.Println("byteString :: ", byteString)
-	fmt.Println("runeString :: ", runeString)
 }
