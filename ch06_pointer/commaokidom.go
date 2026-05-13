@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func commaokidiom() {
+func main() {
 	/*val := getValue()
 	fmt.Println(val)
 	fmt.Println(&val)

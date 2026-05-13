@@ -60,7 +60,7 @@ func main() {
 
 	//fmt.Println(shadowing_risk())
 
-	closures()
+	// closures()
 }
 
 /*

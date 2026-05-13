@@ -7,7 +7,7 @@ type Person struct {
 	age  int
 }
 
-func pointer_behaviour() {
+func main() {
 	vrushali := Person{"vrushali", 20}
 	fmt.Println(vrushali)
 	processPerson(vrushali)
@@ -36,5 +36,4 @@ func processPersonWithPointer(p *Person) {
 	p.age = 4
 
 	p = &Person{"sally", 20}
-
 }
