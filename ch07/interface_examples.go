@@ -94,6 +94,15 @@ Would you like me to elaborate on any specific behavior or discuss how to model 
 in a particular programming paradigm (OOP, functional, database schema)?
 
 Entities, Object and fild behaviour in some program and try to do it in go
+Scratch Steps should be -->
+Define struct first
+then decide behaviour for each
+find common behaviour - convert it to interface
+
+Identify Data for the struct
+Identify the behaviour
+This should be command line program so make it simple and straightforward, need only framework,
+dont give framework with example no need to give full implementation
 */
 
 type Creater interface {
