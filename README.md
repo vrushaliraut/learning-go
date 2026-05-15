@@ -48,33 +48,33 @@ All chapters are now **modular** - each concept is in its own runnable file!
 
 ```bash
 # Chapter 01 examples
-go run ./ch01setupgo/types_declaration.go
-go run ./ch01setupgo/boolean_declaration.go
-go run ./ch01setupgo/integer_types.go
-go run ./ch01setupgo/floating_point.go
-go run ./ch01setupgo/strings_and_runes.go
-go run ./ch01setupgo/constants.go
-go run ./ch01setupgo/variable_declarations.go
-go run ./ch01setupgo/zero_values.go
-go run ./ch01setupgo/type_conversion.go
-go run ./ch01setupgo/networklimitation.go
+go run ./ch01/types_declaration.go
+go run ./ch01/boolean_declaration.go
+go run ./ch01/integer_types.go
+go run ./ch01/floating_point.go
+go run ./ch01/strings_and_runes.go
+go run ./ch01/constants.go
+go run ./ch01/variable_declarations.go
+go run ./ch01/zero_values.go
+go run ./ch01/type_conversion.go
+go run ./ch01/networklimitation.go
 
 # Chapter 02 examples
-go run ./ch02_types_declaration/explicit_types.go
-go run ./ch02_types_declaration/type_inference.go
-go run ./ch02_types_declaration/multiple_declarations.go
-go run ./ch02_types_declaration/constants_declaration.go
+go run ./ch02/explicit_types.go
+go run ./ch02/type_inference.go
+go run ./ch02/multiple_declarations.go
+go run ./ch02/constants_declaration.go
 
 # Chapter 05 examples (same pattern)
-go run ./ch05_functions/calculator.go
-go run ./ch05_functions/closures.go
+go run ./ch05/calculator.go
+go run ./ch05/closures.go
 # ... etc
 ```
 
 **Navigate to a chapter and run a specific file:**
 
 ```bash
-cd ch01setupgo
+cd ch01
 go run types_declaration.go
 go run boolean_declaration.go
 # ... etc
